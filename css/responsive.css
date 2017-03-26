@@ -1,0 +1,142 @@
+/*-------------------------*/
+@media screen and (max-width:1087px){
+    .form-group{
+        width: 100%;
+    }
+    .form-horizontal .control-label{
+        padding: 0;
+        text-align: center;
+    }
+    .form-group{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:991px){
+    .form{
+        width: 100%;
+    }
+    .form-group{
+        margin-bottom: 2em;
+    }
+    .tab-content{
+        padding: 2em 1em;
+    }
+    .nav-tabs li{
+        padding: 0 0.5em;
+    }
+}
+@media screen and (max-width:839px){
+    .phone{
+        width: 60%;
+    }
+    .bottom-form{
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .testinomials{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .banner-bottom ul li:nth-child(2){
+        border-right:none; 
+    }
+}
+@media screen and (max-width:767px){
+    .form-horizontal .control-label{
+        padding: 0 2em;
+    }
+    .form-group select, .form-group input{
+        width: 65%;
+        float: right;
+        margin-top: -40px;
+    }
+    .bottom-form{
+        margin-bottom: 1em;
+    }
+    .navbar-inverse .navbar-nav{
+        background-color: #222;
+        border: none;
+        z-index: 111;
+        position: relative;
+    }
+    .form{
+        height: auto;
+    }
+} 
+@media screen and (max-width:589px){
+    .banner-bottom ul li{
+        width: 100%;
+        border: none;
+        margin-bottom: 2em;
+        padding-right: 0;
+    }
+    .banner-bottom ul li:nth-child(2){
+        padding: 0;
+    }
+    .tag{
+        display: none;
+    }
+    .phone{
+        width: 50%;
+    }
+}
+@media screen and (max-width:479px){
+    .form-horizontal .control-label{
+        padding: 0 1em;
+    }
+    .form-group select, .form-group input{
+        width: 60%;
+    }
+    .phone{
+        width: 40%;
+    }
+    .phone h2{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .logo{
+        width: 180px;
+    }
+    #header{
+        height: auto;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-left{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .footer-right{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:443px){
+    .logo{
+        width: 50%;
+    }
+    .phone{
+        width: 50%;
+        padding-left: 1em;
+    }
+    .phone h2{
+        font-size: 16px;
+    }
+     .form-horizontal .control-label{
+         display: block;
+         text-align: left;
+    }
+    .form-group select, .form-group input{
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+    .form-group .col-sm-8, .form-group .col-sm-7{
+        padding: 0;
+    }
+}
