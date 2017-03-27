@@ -7,8 +7,8 @@
         padding: 0;
         text-align: center;
     }
-    .form-group{
-        margin-bottom: 0;
+    .phone{
+        width: 60%;
     }
 }
 @media screen and (max-width:991px){
@@ -23,6 +23,9 @@
     }
     .nav-tabs li{
         padding: 0 0.5em;
+    }
+    .form{
+        padding-right: 0;
     }
 }
 @media screen and (max-width:839px){
@@ -59,11 +62,56 @@
         border: none;
         z-index: 111;
         position: relative;
+        margin-top: 1em;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        margin-left: 10px;
+    }
+    .navbar-collapse{
+        border-top: none;
+        box-shadow: none;
     }
     .form{
         height: auto;
     }
 } 
+@media screen and (max-width:701px){
+    .tag{
+        position: relative;
+        float: right;
+        margin-top: 5px;
+        width: 130px;
+        height: 130px;
+    }
+    .phone{
+        text-align: right;
+        position: relative;
+        width: 230px;
+    }
+    .phone:before{
+        float: none;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+}
+@media screen and (max-width:584px){
+    .nav-tabs li{
+        margin-bottom: 1em;
+        padding: 0.5em 2em;
+        border: 1px solid #999;
+        float: left;
+    }
+    .nav-tabs li:first-child{
+        padding-left: 2em;
+    }
+    .nav-tabs li:last-child{
+        border: 1px solid #999;;
+    }
+    .nav-tabs li.active{
+        border-color: #ffba00;
+    }
+}
 @media screen and (max-width:589px){
     .banner-bottom ul li{
         width: 100%;
@@ -74,12 +122,6 @@
     .banner-bottom ul li:nth-child(2){
         padding: 0;
     }
-    .tag{
-        display: none;
-    }
-    .phone{
-        width: 50%;
-    }
 }
 @media screen and (max-width:479px){
     .form-horizontal .control-label{
@@ -87,13 +129,6 @@
     }
     .form-group select, .form-group input{
         width: 60%;
-    }
-    .phone{
-        width: 40%;
-    }
-    .phone h2{
-        font-size: 20px;
-        padding-top: 5px;
     }
     .logo{
         width: 180px;
@@ -117,14 +152,16 @@
 
 @media screen and (max-width:443px){
     .logo{
-        width: 50%;
-    }
-    .phone{
-        width: 50%;
-        padding-left: 1em;
+        width: 40%;
     }
     .phone h2{
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .phone{
+        width: 170px;
+    }
+    .phone:before{
+        margin-top: -10px;
     }
      .form-horizontal .control-label{
          display: block;
