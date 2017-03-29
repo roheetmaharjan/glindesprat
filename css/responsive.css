@@ -135,6 +135,15 @@
         padding: 0;
     }
 }
+@media screen and (max-width:500px){
+    .phone{
+        width: 170px;
+    }
+    .phone h2{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
 @media screen and (max-width:497px){
     .nav-tabs{
         width: 60%;
@@ -180,13 +189,6 @@
     .top{
         height: 70px;
     }
-    .phone{
-        width: 170px;
-        margin-top: 20px;
-    }
-    .phone:before{
-        margin-top: -10px;
-    }
      .form-horizontal .control-label{
          display: block;
          text-align: left;
@@ -201,7 +203,7 @@
         padding: 0;
     }
 }
-@media screen and (max-width:357px){
+@media screen and (max-width:380px){
     .top{
         height: auto;
         padding: 1em 0;
@@ -232,5 +234,8 @@
     }
     .news-section .col-md-4{
         padding-left: 0;
+    }
+    .form-horizontal .col-md-6{
+        padding-right: 0;
     }
 }
