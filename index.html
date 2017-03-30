@@ -47,10 +47,38 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">STROM </a></li>
-                    <li><a href="#">GAS</a></li> 
-                    <li><a href="#">VERSICHERUNGEN  </a></li>
-                    <li><a href="#">FRAGEN UND ANTWORTEN </a></li> 
+                    <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">STROM <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Grones</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Nach</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Zpu</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Madnass</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">GAS <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Grones</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Nach</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Zpu</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Madnass</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">VERSICHERUNGEN <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Grones</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Nach</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Zpu</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Madnass</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle" role="button">FRAGEN UND ANTWORTEN <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Grones</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Nach</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Zpu</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Madnass</a></li>
+                        </ul>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -87,12 +115,7 @@
                             <div class="form-group">
                               <label class="control-label col-sm-4" for="pwd">Verbrauch:</label>
                               <div class="col-sm-8">          
-                                <select>
-                                    <option>2000 Kwh</option>
-                                    <option>3000 Kwh</option>
-                                    <option>4000 Kwh</option>
-                                    <option>5000 Kwh</option>
-                                </select>
+                                <input type="text" name="receiver" id="receiver" value="" placeholder="2000" />
                               </div>
                             </div>
                         </div>
@@ -100,11 +123,11 @@
                             <div class="form-group">
                               <label class="control-label col-sm-5" for="email">Personen im Haushalt:</label>
                               <div class="col-sm-7">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                <select name="dropdown" id="dropdown">
+                                    <option value="2000">1</option>
+                                    <option value="3500">2</option>
+                                    <option value="4250">3</option>
+                                    <option value="5000">4</option>
                                 </select>
                               </div>
                             </div>
