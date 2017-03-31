@@ -42,14 +42,14 @@ a{
 
 /*------------Header-------------------*/
 #header{
-    background-color: #333;
+    background-color: #222;
     height: 135px;
     padding-bottom: 3px;
     width: 100%;
     position: relative;
 }
 .top{
-    background-color: #ff7043;
+    background-color: #388E3C;
     padding-top: 0.3em;
     border: 3px dotted #333;
     margin-bottom: 3px;
@@ -81,9 +81,9 @@ a{
 }
 /*bottom*/
 .bottom{
-    border: 1px solid #E64A19;
+    border: 1px solid #388E3C;
     width: 100%;
-    height: 60px;
+    height: 62px;
     z-index: 100;
 }
 /*#burgernav{
@@ -102,13 +102,13 @@ nav ul li{
     margin-right: 1em;
 }
 nav ul li.active a{
-    color: #ffba00;
+    color: #388E3C;
 }
 nav ul li a{
     color: #fff;
 }
 nav ul li a:hover{
-    color: #ffba00;
+    color: #388E3C;
     text-decoration: none;
     transition: 0.5s;    
 }
@@ -124,21 +124,26 @@ nav ul:after{
     background-color: transparent;
     border: none;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-    background-color: transparent;
-    color: #ffba00;
-}
 .navbar-inverse .navbar-nav>li{
-    margin-right: 1em;
+    border-right: 1px solid #000;
+}
+.navbar-nav{
+    padding-left: 0;
 }
 .navbar-inverse .navbar-nav>li>a{
     color: #fff;
     padding-top: 20px;
-    background-color: #ff7043;
+    background-color: #222;
+    padding: 20px 50px;
     
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: #333;
+    border-left: 1px solid #000;
+    color: #fff;
+}
 .navbar-inverse .navbar-nav>li>a:hover{
-    color: #ffba00;
+    background-color: #333;
     transition: 0.5s ease;
 }
 .tag{
@@ -177,9 +182,12 @@ nav ul:after{
     display: block;
     padding: 0 2em;
     background-color: #333;
+    border: 1px solid #000;
     column-count: 2;
     column-gap: 40px;
     column-rule: 1px solid #222;
+    position: absolute;
+    left: 10px;
     -webkit-column-count: 2;
     -webkit-column-gap: 40px;
     -webkit-column-rule: 1px solid #222;
@@ -205,8 +213,8 @@ nav ul:after{
     vertical-align: middle;
 }
 .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus{
-    background-color: transparent;
-    color: #ffba00;
+    background-color: #333;
+    color: #fff;
 }
 /*----Navigation---*/
 
@@ -223,7 +231,7 @@ nav ul:after{
     margin: 0 auto;
     width: 80%;
     padding: 2em;
-    border-top: 3px solid #ffba00;
+    border-top: 3px solid #388E3C;
 }
 .clearfix:after{
     content: '';
@@ -254,21 +262,21 @@ nav ul:after{
 }
 .nav-tabs li.active a{
     background: none;
-    color: #ffba00;
+    color: #388E3C;
     border: none;
 }
 .nav-tabs li a:hover{
     background: none;
-    color: #ffba00;
+    color: #388E3C;
     border: none;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
     background: none;
     border: none;
-    color: #ffba00;
+    color: #388E3C;
 }
 .nav-tabs li.active a:hover{
-    color: #ffba00;
+    color: #388E3C;
 }
 
 .tab-content{
@@ -372,7 +380,7 @@ p.center{
 }  
 a.button{
     padding: 0.5em 2em;
-    background-color: #ffba00;
+    background-color: #388E3C;
     color: #333;
     border-radius: 5px;
     text-decoration: none;
@@ -416,10 +424,10 @@ a.button:hover{
 }
 .carousel-indicators li{
     float: left;
-    border: 2px solid #ffba00;
+    border: 2px solid #388E3C;
 }
 .carousel-indicators li.active{
-    background-color: #ffba00;
+    background-color: #388E3C;
 }
 
 /*--------Banner Bottom------------*/
@@ -473,7 +481,7 @@ footer:after{
     content: '';
 }
 .footer-right a{
-    color: #ffba00;
+    color: #388E3C;
     text-decoration: none;
 }
 .footer-right a:hover{
@@ -500,7 +508,7 @@ footer:after{
     color: #fff;
 }
 .slide a:hover{
-    color: #ffba00;
+    color: #388E3C;
     transition: 0.5s;
 }
 .footer-slide{
@@ -518,7 +526,7 @@ footer:after{
     color: #fff;
 }
 .outside a:hover{
-    color: #ffba00;
+    color: #388E3C;
 }
 .copyright{
     background-color: #000;
@@ -560,7 +568,7 @@ footer:after{
     text-decoration: none;
 }
 .news-list li:hover{
-    border: 1px solid #ffba00;
+    border: 1px solid #388E3C;
     transition: 0.5s ease;
 }
 .news-list li p{
