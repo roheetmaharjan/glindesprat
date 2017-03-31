@@ -45,3 +45,6 @@ $(function(){
 $("#dropdown").change(function(){
     $("#receiver").val($(this).val());
 });
+$("#dropdown2").change(function(){
+    $("#receiver2").val($(this).val());
+});
