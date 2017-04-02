@@ -44,25 +44,24 @@ a{
 #header{
     background-color: #222;
     height: 135px;
-    padding-bottom: 3px;
     width: 100%;
     position: relative;
 }
 .top{
-    background-color: #388E3C;
-    padding-top: 0.3em;
+    background-color: #eee;
+    padding: 12px 0;
     border: 3px dotted #333;
     margin-bottom: 3px;
 }
 .logo{
-    width: 210px;
+    width: 330px;
     float: left;
 }
 .phone{
     float: right;
-    margin-top: 0.8em;
+    margin-top: 0;
     width: 40%;
-    color: #fff;
+    color: #388E3C;
 }
 .phone:before{
     content: '';
@@ -180,11 +179,11 @@ nav ul:after{
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
     display: block;
-    padding: 0 2em;
+    padding: 1em;
     background-color: #333;
     border: 1px solid #000;
     column-count: 2;
-    column-gap: 40px;
+    column-gap: px;
     column-rule: 1px solid #222;
     position: absolute;
     left: 10px;
@@ -201,6 +200,10 @@ nav ul:after{
 }
 .dropdown-menu li a{
     color: #fff;
+}
+.dropdown-menu li a:hover{
+    color: #388E3C;
+    background-color: transparent;
 }
 .caret-up {
     width: 0; 
@@ -321,6 +324,23 @@ p.center{
 }
 .heading h3{
     margin-bottom: 1em;
+}
+.insuranceform{
+    background-image: url(../images/form.PNG);
+    background-repeat: no-repeat;
+    padding: 0.5em;
+    position: relative;
+    height: 45px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.insuranceform input{
+    width: 80px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 8px;
+    left: 25px;
 }
 /*--------Banner Bottom------------*/
 
@@ -552,9 +572,17 @@ footer:after{
 .bottom-form li h3{
     margin-bottom: 0.5em;
 }
+.bottom-form li p{
+    margin-bottom: 1em;
+}
+.bottom-form li span{
+    background-color: #388E3C;
+    padding: 0.3em;
+    border-radius: 50%;
+}
 .news{
     line-height: 1.8em;
-    padding-left: 0;
+    padding-left: 1em;
 }
 .news-list li{
     display: block;
@@ -573,4 +601,35 @@ footer:after{
 }
 .news-list li p{
     color: #888;
+}
+
+
+
+
+
+/*Pages*/
+.details{
+    line-height: 2em;
+    border: 1px solid #999;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.details h2{
+    margin-bottom: 1em
+}
+.details h3{
+    color: #999;
+    margin-bottom: 1em;
+}
+.details p{
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+.details ul{
+    list-style: decimal;
+    padding: 1em;
+    color: #388E3C;
+}
+.details a{
+    color: #388E3C;
 }
