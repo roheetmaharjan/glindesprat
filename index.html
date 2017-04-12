@@ -16,11 +16,13 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <!--Main File-->
     
     <link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css">
     <link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
       <div class="top">
          <div class="container">
           <div class="logo">
-              <img src="images/logo.png" alt="glindespart">
+              <a href="index.html"><img src="images/logo.png" alt="glindespart"></a>
           </div>
           <div class="phone">
               <h2>0800-32 32 124</h2>
@@ -47,10 +49,47 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">STROM </a></li>
-                    <li><a href="#">GAS</a></li> 
-                    <li><a href="#">VERSICHERUNGEN  </a></li>
-                    <li><a href="#">FRAGEN UND ANTWORTEN </a></li> 
+                    <li class="active dropdown"><a href="strom.html" id="drop1" data-toggle="" class="dropdown-toggle" role="button">STROM <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Stromvergleich</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Ökostromvergleich</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Berlin</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Hamburg</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom München</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Köln</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Frankfurt</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Stuttgart</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Strom Dortmund</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Weitere Städte</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="" id="drop1" data-toggle="" class="dropdown-toggle" role="button">GAS <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Gasvergleich</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Berlin</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Hamburg</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas München</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Köln</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Frankfurt</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Stuttgart</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Dortmund</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Gas Essen</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Weitere Städte</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="versicherungen.html" id="drop1" data-toggle="" class="dropdown-toggle" role="button">VERSICHERUNGEN <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                            <li role="presentation"><a href="#" role="menuitem">Private Kfz-Versicherung</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Motorrad-Versicherung</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Rechtsschutzversicherung</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Privathaftpflichtversicherung</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Tierhalterhaftpflichtversicherung</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Haus- und Grundbesitzerhaftpflicht</a></li>
+                            <li role="presentation"><a href="#" role="menuitem">Öltankversicherung</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a href="fragenundantworten.html" id="drop1" data-toggle="" class="dropdown-toggle" role="button">FRAGEN UND ANTWORTEN</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -65,13 +104,13 @@
       </div>
    </header>
    <div class="banner">
-       <div class="form">
+       <div class="form animated flipInX">
            <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Stromvergleich</a></li>
                 <li><a data-toggle="tab" href="#menu1">Gasvergleich</a></li>
                 <li><a data-toggle="tab" href="#menu2">KFZ Versicherung </a></li>
                 <li><a data-toggle="tab" href="#menu3">Krankenversicherung</a></li>
-                <li><a data-toggle="tab" href="#menu3">Privathaftpflicht</a></li>
+                <li><a data-toggle="tab" href="#menu4">Privathaftpflicht</a></li>
             </ul>
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
@@ -81,18 +120,13 @@
                             <div class="form-group">
                               <label class="control-label col-sm-4" for="email">Postleitzahl :</label>
                               <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                <input type="email" class="form-control" id="email" placeholder="">
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="control-label col-sm-4" for="pwd">Verbrauch:</label>
                               <div class="col-sm-8">          
-                                <select>
-                                    <option>2000 Kwh</option>
-                                    <option>3000 Kwh</option>
-                                    <option>4000 Kwh</option>
-                                    <option>5000 Kwh</option>
-                                </select>
+                                <input type="text" name="receiver" id="receiver" value="" placeholder="2000" />
                               </div>
                             </div>
                         </div>
@@ -100,11 +134,11 @@
                             <div class="form-group">
                               <label class="control-label col-sm-5" for="email">Personen im Haushalt:</label>
                               <div class="col-sm-7">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                <select name="dropdown" id="dropdown">
+                                    <option value="2000">1</option>
+                                    <option value="3500">2</option>
+                                    <option value="4250">3</option>
+                                    <option value="5000">4</option>
                                 </select>
                               </div>
                             </div>
@@ -113,15 +147,13 @@
                               <div class="col-sm-8">          
                                 <select>
                                     <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
+                                    <option>alle, inkl. Vorkasse</option>
                                 </select>
                               </div>
                             </div>
                         </div>
                         </div>
-                        <p class="center"><a href="#" class="button" type="button">Jetzt vergleichen</a></p>
+                        <p class="center"><a href="stromview.html" class="button" type="button">Jetzt vergleichen</a></p>
                       </form>
                 </div>
                 <div id="menu1" class="tab-pane fade">
@@ -129,147 +161,101 @@
                       <div class="row">
                        <div class="col-md-6">
                             <div class="form-group">
-                              <label class="control-label col-sm-4" for="email">Postleitzahl :</label>
-                              <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                              <label class="control-label col-sm-4" for="pwd">Wohnungsgröße :</label>
+                              <div class="col-sm-8">          
+                                <select name="dropdown2" id="dropdown2">
+                                    <option value="5000">50 m2</option>
+                                    <option value="12000">100 m2 </option>
+                                    <option value="18000">150 m2</option>
+                                    <option value="35000">280 m2</option>
+                                </select>
                               </div>
                             </div>
                             <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Verbrauch:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>2000 Kwh</option>
-                                    <option>3000 Kwh</option>
-                                    <option>4000 Kwh</option>
-                                    <option>5000 Kwh</option>
-                                </select>
+                              <label class="control-label col-sm-5" for="email">Verbrauch:</label>
+                              <div class="col-sm-7">
+                               <input type="text" name="receiver2" id="receiver2" value="" placeholder="5000" />
                               </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                              <label class="control-label col-sm-5" for="email">Personen im Haushalt:</label>
-                              <div class="col-sm-7">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Zahlungsweise:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                </select>
+                              <label class="control-label col-sm-4" for="email">Postleitzahl :</label>
+                              <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email" placeholder="">
                               </div>
                             </div>
                         </div>
                         </div>
-                        <p class="center"><a href="#" class="button" type="button">Jetzt vergleichen</a></p>
+                        <p class="center"><a href="gasview.html" class="button" type="button">Jetzt vergleichen</a></p>
                       </form>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <form class="form-horizontal">
                       <div class="row">
-                       <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="email">Postleitzahl :</label>
-                              <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email">
-                              </div>
+                          <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="heading"> 
+                                <h3>Bis zu 850 € sparen!</h3>
+                                <p>Ganz einfach vergleichen und sparen!</p>
+                                <div class="insuranceform">
+                                    <input type="text">
+                                </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Verbrauch:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>2000 Kwh</option>
-                                    <option>3000 Kwh</option>
-                                    <option>4000 Kwh</option>
-                                    <option>5000 Kwh</option>
-                                </select>
-                              </div>
-                            </div>
+                          <div class="col-md-3"></div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="control-label col-sm-5" for="email">Personen im Haushalt:</label>
-                              <div class="col-sm-7">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Zahlungsweise:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                </select>
-                              </div>
-                            </div>
-                        </div>
-                        </div>
-                        <p class="center"><a href="#" class="button" type="button">Jetzt vergleichen</a></p>
+                        <p class="center"><a href="kfz.html" class="button" type="button">Jetzt vergleichen</a></p>
                       </form>
                 </div>
                 <div id="menu3" class="tab-pane fade">
                     <form class="form-horizontal">
                       <div class="row">
-                       <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="email">Postleitzahl :</label>
-                              <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Verbrauch:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>2000 Kwh</option>
-                                    <option>3000 Kwh</option>
-                                    <option>4000 Kwh</option>
-                                    <option>5000 Kwh</option>
+                          <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="heading"> 
+                                <h3>Bis zu 500 € sparen!</h3>
+                                <p>Ganz einfach vergleichen und sparen!</p>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-sm-4" for="pwd">Beruf : </label>
+                                  <div class="col-sm-8">          
+                                    <select>
+                                   <option>Studentin</option>
+                                    <option>Angestellter</option>
+                                    <option>Selbstandiger</option>
+                                    <option>Beamter</option>
                                 </select>
-                              </div>
+                                  </div>
+                                </div>
                             </div>
+                          <div class="col-md-3"></div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="control-label col-sm-5" for="email">Personen im Haushalt:</label>
-                              <div class="col-sm-7">
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                        <p class="center"><a href="" class="button" type="button">Jetzt vergleichen</a></p>
+                      </form>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <form class="form-horizontal">
+                      <div class="row">
+                          <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="heading"> 
+                                <h3>Bis zu 80 % sparen!</h3>
+                                <p>Ganz einfach vergleichen und sparen!</p>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-sm-4" for="pwd">Tarif : </label>
+                                  <div class="col-sm-8">          
+                                    <select>
+                                   <option>Familie/lebensgemeinschaft mit kinder</option>
+                                    <option>Familie/lebensgemeinschaft ohne kinder</option>
+                                    <option>Single ohne kinder</option>
+                                    <option>Single mit kinder</option>
                                 </select>
-                              </div>
+                                  </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-4" for="pwd">Zahlungsweise:</label>
-                              <div class="col-sm-8">          
-                                <select>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                    <option>Monatlich</option>
-                                </select>
-                              </div>
-                            </div>
-                        </div>
+                          <div class="col-md-3"></div>
                         </div>
                         <p class="center"><a href="#" class="button" type="button">Jetzt vergleichen</a></p>
                       </form>
