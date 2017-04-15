@@ -8,7 +8,10 @@
         text-align: center;
     }
     .phone{
-        width: 60%;
+        width: 65%;
+    }
+    .nav-tabs li a{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:991px){
@@ -18,20 +21,11 @@
     .form-group{
         margin-bottom: 2em;
     }
-    .tab-content{
-        padding: 2em 1em;
-    }
-    .nav-tabs li{
-        padding: 0 0.5em;
-    }
     .form{
         padding-right: 0;
     }
 }
 @media screen and (max-width:839px){
-    .phone{
-        width: 60%;
-    }
     .bottom-form{
         width: 100%;
         margin-bottom: 1.5em;
@@ -44,21 +38,24 @@
     .banner-bottom ul li:nth-child(2){
         border-right:none; 
     }
+    .nav-tabs li a span{
+        display: none
+    }
 }
 @media screen and (max-width:767px){
-    .form-horizontal .control-label{
+    /*.form-horizontal .control-label{
         padding: 0 2em;
     }
-    .form-group select, .form-group input{
+    /*.form-group select, .form-group input{
         width: 65%;
         float: right;
         margin-top: -40px;
     }
     .bottom-form{
         margin-bottom: 1em;
-    }
+    }*/
     .navbar-inverse .navbar-nav{
-        background-color: #222;
+        background-color: #41b655;
         border: none;
         z-index: 111;
         position: relative;
@@ -66,6 +63,7 @@
     }
     .navbar-inverse .navbar-nav>li>a{
         margin-left: 10px;
+        color: #fff;
     }
     .navbar-collapse{
         border-top: none;
@@ -74,168 +72,95 @@
     .form{
         height: auto;
     }
-} 
-@media screen and (max-width:701px){
-    .tag{
-        position: relative;
-        float: right;
-        margin-top: 5px;
-        width: 130px;
-        height: 130px;
-        margin-left: 25px;
+    .nav-tabs li a span{
+        display: block;
+        font-size: 25px;
     }
-    .form{
-        padding: 2em 1em;
-        border: none;
+    .nav-tabs li a b{
+        display: none;
     }
-    .nav-tabs{
-        width: 70%;
-        float: left;
-        margin-bottom: 2em;
-    }
-    .nav-tabs li{
-        margin-bottom: 1em;
-        padding: 0.5em 1em;
-        border: 1px solid #999;
-        float: left;
-    }
-    .nav-tabs li:first-child{
-        padding-left: 2em;
-    }
-    .nav-tabs li:last-child{
-        border: 1px solid #999;;
-    }
-    .nav-tabs li.active{
-        border-color: #ffba00;
-    }
-    .banner{
-        background-image: none;
-        padding: 0;
-    }
-    .phone{
-        text-align: right;
-        position: relative;
-        width: 230px;
-    }
-    .phone:before{
-        float: none;
+    .nav-tabs li.active:after{
+        content: '';
         display: inline-block;
         position: absolute;
-        left: 0;
+        bottom: -10px;
+        left: 22px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #41b655;
     }
-}
-@media screen and (max-width:589px){
+    .phone{
+        width: 98%;
+    }
+    .navbar-toggle{
+        border: none;
+        border-radius: 0;
+        left: 10px;
+    }
+    .navbar-toggle:hover{
+        background-color: #14932a;
+    }
+    
+    ul.dropdown-menu li a{
+        color: #fff;
+    }
+    .nav-pills li{
+        display: inline-block;
+    }
+    .nav-pills li p{
+        display: none;
+    }
+    
+    .form-horizontal .control-label{
+        padding: 0 2em;
+    }
+} 
+@media screen and (max-width:600px){
     .banner-bottom ul li{
         width: 100%;
-        border: none;
-        margin-bottom: 2em;
-        padding-right: 0;
+        padding: 0;
+        margin-bottom: 1em;
     }
     .banner-bottom ul li:nth-child(2){
         padding: 0;
+        padding-top: 1em;
     }
 }
-@media screen and (max-width:500px){
-    .phone{
-        width: 170px;
-    }
-    .phone h2{
-        font-size: 20px;
-        margin-top: 5px;
-    }
-}
-@media screen and (max-width:497px){
-    .nav-tabs{
-        width: 60%;
-    }
-    .nav-tabs li{
-        margin-bottom: 0.5em;
-    }
-}
-@media screen and (max-width:479px){
-    .form-horizontal .control-label{
-        padding: 0 1em;
-    }
-    .form-group select, .form-group input{
-        width: 60%;
-    }
+@media screen and (max-width:544px){
     .logo{
-        width: 40%;
+        width: 100%;
     }
-    #header{
-        height: auto;
+    .tag{
+        top:100px;
+        right: 0;
     }
-    .logo img{
+    .control-label .col-sm-4{
+        width: 100%;
         display: block;
-        margin: 0 auto;
     }
-    .footer-left{
+    .form-control{
+        width: 100%;
+    }
+    
+    .footer-left, .footer-right{
         width: 100%;
         margin-bottom: 2em;
     }
     .footer-right{
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width:443px){
-    .logo{
-        width: 50%;
-    }
-    .phone h2{
-        font-size: 20px;
-    }
-    .top{
-        height: 70px;
-    }
-     .form-horizontal .control-label{
-         display: block;
-         text-align: left;
-    }
-    .form-group select, .form-group input{
-        display: block;
-        width: 100%;
-        margin-top: 0;
-        padding: 0;
-    }
-    .form-group .col-sm-8, .form-group .col-sm-7{
-        padding: 0;
-    }
-}
-@media screen and (max-width:380px){
-    .top{
-        height: auto;
-        padding: 1em 0;
-    }
-    .logo{
-        width: 100%;
-        border-bottom: 1px solid #168d7f;
-        padding: 0.5em 0;
-    }
-    .logo img{
-        display: block;
-        width: 180px;
-        margin: 0 auto;
-    }
-    .phone{
-        padding: 5px;
-        width: 55%;
-        float: left;
-    }
-    .phone:before{
-        float: left;
-    }
-    .nav-tabs{
-        width: 40%;
-    }
-    .nav-tabs li a{
-        font-size: 13px;
-    }
-    .news-section .col-md-4{
         padding-left: 0;
     }
-    .form-horizontal .col-md-6{
-        padding-right: 0;
+    .form-horizontal .control-label{
+        padding: 0 1em;
+    }
+}
+@media screen and (max-width:452px){
+    .phone h2{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .news-section .col-md-3{
+        padding: 0;
     }
 }
