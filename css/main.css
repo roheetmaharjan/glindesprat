@@ -795,3 +795,21 @@ input.checkbox{
     color: #999;
     right: 10px;
 }
+.button2{
+    display: inline-block;
+    padding: 0.5em 2em;
+    background-color: #41b655;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.button2:hover{
+    text-decoration: none;
+    background-color: #feea39;
+    color: #333;
+    transition: 0.5s all ease-in-out;
+}
+.button2 small{
+    display: block;
+}
