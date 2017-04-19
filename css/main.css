@@ -381,7 +381,9 @@ a.button:hover{
     padding: 0 0 0 1em;
 }
 .bottom-form{
-    width: 66.6%;
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(56, 142, 60, 0.12);
     float: left;
 }
 .testinomials{
@@ -797,7 +799,7 @@ input.checkbox{
 }
 .button2{
     display: inline-block;
-    padding: 0.5em 2em;
+    padding: 1em 5em;
     background-color: #41b655;
     border-radius: 5px;
     text-align: center;
@@ -812,4 +814,51 @@ input.checkbox{
 }
 .button2 small{
     display: block;
+}
+.title h3{
+    padding: 10px;
+    line-height: 1.5em;
+    background-color: rgba(56, 142, 60, 0.19);
+    color: #333;
+}
+.title h3 span{
+    color: #388E3C;
+    font-size: 18px;
+}
+
+input[type=date] {
+  height: 35px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+    border: 1px solid #999;
+  outline: none;
+  padding: 10px 0 10px 10px;
+  color: #444;
+}
+input[type=date]::-webkit-clear-button {
+  font-size: 18px;
+  height: 30px;
+  position: relative;
+  right: 5px;
+  margin-right: 4px;
+}
+input[type=date]::-webkit-inner-spin-button {
+  height: 35px;
+    display: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  font-size: 10px;
+  background-color: none;
+    color: #333;
+    opacity: 1;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  color: #fff;
+  cursor: pointer;
+    background-color: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator:active {
+  color: #388E3C;
 }
