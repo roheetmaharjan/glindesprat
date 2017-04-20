@@ -708,6 +708,9 @@ footer:after{
 .checkbox-form-group{
     margin-bottom: 2em;
 }
+.checkbox-form-group a{
+    color: #388E3C;
+}
 input.checkbox{
     float: left;
     width: 15px;
@@ -815,11 +818,58 @@ input.checkbox{
 .button2 small{
     display: block;
 }
+.inner-contact{
+    padding: 2em 0;
+    //background-color: rgba(56, 142, 60, 0.19);
+}
+.inner-contact label{
+    font-weight: normal;
+    margin-right: 10px;
+}
+.inner-contact input,.inner-contact textarea{
+    border: 1px solid #388E3C;;
+    background-color: rgba(65, 182, 85, 0.10);
+    color: #555;
+    padding-left: 10px;
+}
+.inner-contact:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.inner-contact input::-webkit-input-placeholder,.inner-contact textarea::-webkit-input-placeholder{
+    color: #555;
+}
+.contact-list-item{
+    background-color: #eee;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.contact-list-item li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.5em;
+    color: #388E3C;
+}
+.contact-list-item li:before{
+    content: '';
+    background-image: url('../images/add.png');
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 5px;
+    position: absolute;
+    
+}
+
 .title h3{
     padding: 10px;
     line-height: 1.5em;
-    background-color: rgba(56, 142, 60, 0.19);
-    color: #333;
+    //background-color: rgba(56, 142, 60, 0.19);
+    border: 1px solid #388E3C;
+    color: #999;
+    margin-bottom: 1em;
 }
 .title h3 span{
     color: #388E3C;
