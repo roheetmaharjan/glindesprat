@@ -47,8 +47,8 @@ a{
 }
 .top{
     background-color: rgba(65, 182, 85, 0.12);
-    padding: 5px 0;
-    border-bottom: 1px solid #feea39;
+    padding: 10px 0;
+    border-bottom: 1px solid #388E3C;
 }
 .logo{
     width: 330px;
@@ -77,11 +77,11 @@ a{
 }
 /*bottom*/
 .bottom{
-    padding: 5px 0;
+    padding: 0;
     background-color: #41b655;
-    border-bottom: 2px solid #feea39;
+    border-bottom: 1px solid #388E3C;
     width: 100%;
-    height: 67px;
+    height: 56px;
     z-index: 100;
 }
 .navbar-toggle{
@@ -97,19 +97,25 @@ a{
 .navbar-inverse .navbar-nav>li>a{
     color: #fff;
     background-color: #41b655;
-    border: 1px solid #388E3C;
+    border-right: 1px solid #388E3C;
+    border-left: 1px solid #388E3C;
     padding: 0 2em;
     line-height: 55px;
-    margin-right: 1em;
     
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
     color: #feea39;
     background: #388E3C;
 }
+navbar-inverse .navbar-nav>.active{
+    margin-left: -15px;
+}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
     background-color: #388E3C;
     color: #feea39;
+}
+.navbar-inverse .container{
+    padding: 0;
 }
 .tag{
     background-image: url(../images/tag.png);
@@ -188,7 +194,7 @@ a{
     border: 1px solid #41b655;
     margin: 0 auto;
     box-shadow: 1px 1px 15px #999;
-    width: 80%;
+    width: 100%;
     padding: 0;
     overflow-x: hidden;
 }
@@ -202,15 +208,19 @@ a{
     display: inline-block;
     margin: 0 auto;
     background-color: #41b655;
+    width: 100%
 }
 .nav-tabs li{
     border: 1px solid #388E3C;
-    padding: 10px 20px;
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
 }
 .nav-tabs li a{
     font-size: 16px;
     padding: 0;
     color: #fff;
+    text-align: center;
     border: none;
 }
 .nav-tabs li a b{
@@ -236,7 +246,8 @@ a{
 }
 
 .tab-content{
-    padding: 5em 4em;
+    border: none;
+    padding: 0 2em;
 }
 /**------Form-------------**/
 .form-group{
@@ -250,7 +261,6 @@ a{
 .form-horizontal .control-label{
     color: #333;
     background-color: #eee;
-    margin-right: -1em;
     text-align: left;
     height: 35px;
     padding-top: 0;
