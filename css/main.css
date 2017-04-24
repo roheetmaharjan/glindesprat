@@ -789,6 +789,10 @@ input.checkbox{
     color: #333;
     text-decoration: none;
 }
+.insurance-section .fa{
+    font-size: 18px;
+    margin-right: 10px;
+}
 .insurance-list{
     padding: 1em;
     margin-bottom: 2em;
