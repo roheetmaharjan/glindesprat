@@ -98,131 +98,123 @@
           </div>
       </div>
    </header>
-   <section id="krz-form">
+   <section id="form">
 	<div class="row">
 		<div class="container">
 	    	<div class="row">
                <div class="col-md-9">
                 <div class="col-xs-12">
+                
+                <h3>Private Krankenversicherung Vergleich</h3> <br>
                 <ul class="nav nav-pills nav-justified setup-panel">
                     <li class="active"><a href="#step-1">
-                        <h4 class="list-group-item-heading"><span class="fa fa-car"></span></h4>
-                        <p class="list-group-item-text">FAHRZEUG</p>
+                        <h4 class="list-group-item-heading"></h4>
+                        <p class="list-group-item-text">Versicherungsdaten
+                        </p>
                     </a></li>
                     <li class="disabled"><a href="#step-2">
-                        <h4 class="list-group-item-heading"><span class="fa fa-user"></span></h4>
-                        <p class="list-group-item-text">FAHRER</p>
-                    </a></li>
-                    <li class="disabled"><a href="#step-3">
-                        <h4 class="list-group-item-heading"><span class="fa fa-shield"></span></h4>
-                        <p class="list-group-item-text">SCHUTZ </p>
-                    </a></li>
-                    <li class="disabled"><a href="#step-4">
-                        <h4 class="list-group-item-heading">%</h4>
-                        <p class="list-group-item-text">RABATTE</p>
-                    </a></li>    
+                        <h4 class="list-group-item-heading"></h4>
+                        <p class="list-group-item-text">Personendaten</p>
+                    </a></li>   
                 </ul>
             </div>
             <form class="container">
 
                     <div class="row setup-content" id="step-1">
                         <div class="col-xs-12">
-                            <div class="col-md-12 well">
-                                <h2>FAHRZEUG</h2>
+                            <div class="col-md-12 well"><br>
+                                <h5 class="text-center">Geben Sie bitte Ihren gewünschten Versicherungsumfang an</h5><br><br>
                                 <!-- <form> -->     
                                 <div class="form-group">
-                                  <label class="control-label col-xs-5" for="email">Ihr Kennzeichen</label>
-                                  <div class="col-xs-7">
-                                       <div class="kfz-form">
-                                            <input type="text" class="kfz-input" id="email" placeholder="">
-                                       </div>
-                                  </div>
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Ihr Geschlecht</label>
+                                            <div class="col-sm-7">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>mannlich</option>
+                                                  <option>weiblich</option>
+                                              </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Ihr Geburtsdatum</label>
+                                            <div class="col-sm-7">
+                                              <input type="date">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Ihre Berufsgruppe</label>
+                                            <div class="col-sm-7">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>Angestelte(r)</option>
+                                                  <option>Selbststandige(r)</option>
+                                                  <option>Beamte(r)</option>
+                                                  <option>Student(in)</option>
+                                              </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Selbstbeteiligung</label>
+                                            <div class="col-sm-7">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>Keine</option>
+                                                  <option>300 Euro / Jahr</option>
+                                                  <option>600 Euro / Jahr</option>
+                                                  <option>1000 Euro / Jahr</option>
+                                              </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Zahnarztleistungen</label>
+                                            <div class="col-sm-7">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>Niedrige Leistung</option>
+                                                  <option>Gute Leistung</option>
+                                                  <option>Sehr gute Leistung</option>
+                                              </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Stationäre Leistungen</label>
+                                            <div class="col-sm-7">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>Mehrbettzimmer / ohne Chefarzt</option>
+                                                  <option>Zweibettzimmer / Chefarzt</option>
+                                                  <option>Einbetzimmer / Chefarzt</option>
+                                              </select>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-5">	Krankentagegeld</label>
+                                            <div class="col-sm-5">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option>0 Euro / Tag</option>
+                                                  <option>75 Euro / Tag</option>
+                                                  <option>100 Euro / Tag</option>
+                                                  <option>150 Euro / Tag</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-sm-2">
+                                              <select name="dropdown" id="dropdown">
+                                                  <option> Tag</option>
+                                                  <option>45</option>
+                                              </select>
+                                            </div>
+                                    </div>
                                 </div>
                                 <!-- </form> -->
-                                <div class="form-group">
-                                  <label class="control-label col-sm-5 col-xs-12" for="email">Fahrzeugauswahl</label>
-                                  <div class="col-sm-7 col-xs-12">
-                                      <ul class="select">
-                                          <li class="active"><a data-toggle="tab" href="#1">Fahrzeugschein</a></li>
-                                          <li><a data-toggle="tab" href="#2">Marke und Modell</a></li>
-                                      </ul>
-                                  </div>
-                                  <div class="row">
-                                  <div class="col-xs-12">
-                                      <div class="tab-content select-form">
-                                          <div id="1" class="tab-pane fade in active">
-                                              <div class="form-group">
-                                                  <label class="control-label col-xs-5" for="email">Herstellernummer</label>
-                                                  <div class="col-xs-7">        
-                                                    <input type="text" name="" id="receiver" value="" />
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="control-label col-xs-5" for="email">Typschlusselnummer</label>
-                                                  <div class="col-xs-7">        
-                                                    <input type="text" name="" id="receiver" value="" />
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="control-label col-xs-5" for="email">Zulassungsbescheinigung</label>
-                                                  <div class="col-xs-7">        
-                                                      <div class="certificate-view">
-                                                          <a href="images/certificate-large.jpg"><img src="images/certificate-small.png" alt=""></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div id="2" class="tab-pane fade">
-                                              <div class="form-group">
-                                                  <label class="control-label col-sm-5">Marke</label>
-                                                  <div class="col-sm-7">
-                                                    <select name="dropdown" id="dropdown">
-                                                        <option>Bitte eingeben oder wahlen</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="control-label col-sm-5">Modellreihe</label>
-                                                  <div class="col-sm-7">
-                                                    <select name="dropdown" id="dropdown">
-                                                        <option>Bitte eingeben oder wahlen</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="control-label col-sm-5">Fahrzeugkategorie</label>
-                                                  <div class="col-sm-7">
-                                                    <select name="dropdown" id="dropdown">
-                                                        <option>Bitte eingeben oder wahlen</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="control-label col-sm-5">Leistungsbereich</label>
-                                                  <div class="col-sm-7">
-                                                    <select name="dropdown" id="dropdown">
-                                                        <option>Bitte eingeben oder wahlen</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  </div>
-                                </div>
-                                <a id="activate-step-2" class="button pull-right" href="#">Weiter</a>
+                                <a id="activate-step-2" class="button pull-right" href="#">Weiter zu Schritt 2</a>
                             </div>
                         </div>
                     </div>
@@ -232,77 +224,64 @@
             <form class="container">
 
                 <div class="row setup-content" id="step-2">
-                    <div class="col-xs-12">
-                        <div class="col-md-12 well">
-                            <h2>NUTZUNG</h2>
-                               <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Nutzung des Farzeugs</label>
-                                  <div class="col-xs-7">
-                                      <div class="radios">
-                                            <input type="radio" name="Nutzung des Farzeugs" value="nur privat" checked class="radio"> nur privat (inkl. Arbeitsweg)<br>
-                                            <input type="radio" name="Nutzung des Farzeugs" value="nur gewerblich" class="radio"> nur gewerblich<br>
-                                            <input type="radio" name="Nutzung des Farzeugs" value="privat und gewerblich" class="radio"> privat und gewerblich
-                                       </div>
-                                  </div>
+                        <div class="col-xs-12">
+                            <div class="col-md-12 well"><br>
+                                <h5 class="text-center">Kstenlose und individuelle Beratung anfordern</h5><br><br>
+                                <!-- <form> -->     
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-4">	Vor- Nachname</label>
+                                            <div class="col-sm-4">
+                                              <input type="text" placeholder="Vorname">
+                                            </div>
+                                            <div class="col-sm-4">
+                                              <input type="text" placeholder="Nachname">
+                                            </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Fahren Sie mehr privat oder gewerblich?</label>
-                                  <div class="col-xs-7">
-                                      <div class="radios">
-                                            <input type="radio" name="Fahren Sie mehr privat oder gewerblich?" value="nur privat" checked class="radio"> mehr privat Arbeitsweg)<br>
-                                            <input type="radio" name="Fahren Sie mehr privat oder gewerblich?" value="nur gewerblich" class="radio"> mehr gewerblich gewerblich<br>
-                                       </div> 
-                                  </div>
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-4">	Strabe & Hausnr</label>
+                                            <div class="col-sm-6">
+                                              <input type="text" placeholder="Strabe">
+                                            </div>
+                                            <div class="col-sm-2">
+                                              <input type="text" placeholder="Hausnr">
+                                            </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Jahrliche Fahrleistung</label>
-                                  <div class="col-xs-7">
-                                       <input type="text" name="jahrlich" placeholder="0.000km">
-                                  </div>
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-4">	Postieitzahl, Ort</label>
+                                            <div class="col-sm-3">
+                                              <input type="text" placeholder="Postieitzahl">
+                                            </div>
+                                            <div class="col-sm-5">
+                                              <input type="text" placeholder="Ort">
+                                            </div>
+                                    </div>
                                 </div>
-                            <h2>Fahrer</h2>
-                               <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Fahrer des Autos</label>
-                                  <div class="col-xs-7">
-                                      <div class="radios">
-                                            <input type="radio" name="Fahrer des Autos" value="nur privat" checked class="radio"> versicherungsnehmer<br>
-                                            <input type="radio" name="Fahrer des Autos" value="nur gewerblich" class="radio"> versicherungsnehmer und weitere fahrer<br>
-                                       </div>
-                                  </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-4">	Telefon / Mobilnr</label>
+                                            <div class="col-sm-8">
+                                              <input type="text" placeholder="Telefon / Mobilnr">
+                                            </div>
+                                    </div>
                                 </div>
-                             <h2>Versicherungsnehmer</h2>
-                             <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Geschleht</label>
-                                  <div class="col-xs-7">
-                                      <div class="radios">
-                                            <input type="radio" name="Privat and Gewerblich" value="nur privat" checked class="radio"> mannlich<br>
-                                            <input type="radio" name="Privat and Gewerblich" value="nur gewerblich" class="radio"> weiblich<br>
-                                       </div>
-                                  </div>
-                             </div>
-                             <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Geburtsdatum</label>
-                                  <div class="col-xs-7">
-                                       <input type="date" name="jahrlich" placeholder="TT:MM:JJ">
-                                  </div>
+                                <div class="form-group">
+                                   <div class="form-group">
+                                        <label class="control-label col-sm-4">	E-Mail-Addresse</label>
+                                            <div class="col-sm-8">
+                                              <input type="text" placeholder="E-Mail-Addresse">
+                                            </div>
+                                    </div>
+                                </div>
+                                <!-- </form> -->
+                                <a id="" class="button pull-right" href="">Einreichen</a>
                             </div>
-                            <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Fuhrerschein erworben am</label>
-                                  <div class="col-xs-7">
-                                       <input type="date" name="Fuhrerschein" placeholder="TT:MM:JJ">
-                                  </div>
-                                </div>
-                            <div class="form-group">
-                                  <label class="control-label col-xs-5" for="">Land des fuhrerscheinerwerbs</label>
-                                  <div class="col-xs-7">
-                                       <input type="select" name="Land" placeholder="Deutschland">
-                                  </div>
-                            </div>
-                             
-                            <a id="activate-step-3" class="button pull-right" href="#">weiter</a>
                         </div>
                     </div>
-                </div>
 
             </form>
 
@@ -432,7 +411,6 @@
                                        </div>
                                   </div>
                              </div>
-                             <a id="" class="button pull-right" href="contact.html">Einreichen</a>
                         </div>
                     </div>
                 </div>
