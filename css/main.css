@@ -925,3 +925,37 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
 input[type=date]::-webkit-calendar-picker-indicator:active {
   color: #388E3C;
 }
+.thankyou {
+    padding: 100px 0;
+    text-align: center;
+}
+.thankyou h3{
+    color: #111;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+.thankyou h1{
+    text-align: center;
+    padding:10px;
+    color: #fff;
+    font-size: 30px;
+}
+.thankyou h1 span{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #388E3C;
+}
+.thankyou p{
+    margin: 30px 0;
+    font-size: 20px;
+    color: #111;
+}
+
+#form{
+    padding: 4em 0;
+}
