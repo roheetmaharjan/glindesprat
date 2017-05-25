@@ -59,7 +59,7 @@
         border: none;
         z-index: 111;
         position: relative;
-        margin-top: 1em;
+        margin-top: 8px;
     }
     .navbar-inverse .navbar-nav>li>a{
         margin-left: 10px;
@@ -68,6 +68,9 @@
     .navbar-collapse{
         border-top: none;
         box-shadow: none;
+    }
+    .navbar-toggle{
+        left: 20px;
     }
     .form{
         height: auto;
@@ -84,7 +87,7 @@
         display: inline-block;
         position: absolute;
         bottom: -10px;
-        left: 22px;
+        left: 38%;
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
@@ -97,7 +100,10 @@
     .navbar-toggle{
         border: none;
         border-radius: 0;
-        left: 10px;
+        left: 30px;
+    }
+    .navbar-toggle:focus{
+        background-color: #056516;
     }
     .navbar-toggle:hover{
         background-color: #14932a;
@@ -112,9 +118,21 @@
     .nav-pills li p{
         display: none;
     }
-    
+    .tab-content{
+        padding: 0;
+        margin-top: 0;
+        border-top: none;
+        padding-bottom: 1em;
+    }
+    .form-horizontal .form-group{
+        margin: 0;
+        margin-bottom: 1em;
+    }
     .form-horizontal .control-label{
-        padding: 0 2em;
+        display: block;
+        text-align: center;
+        background-color: transparent;
+        padding: 0;
     }
 } 
 @media screen and (max-width:600px){
@@ -162,5 +180,35 @@
     }
     .news-section .col-md-3{
         padding: 0;
+    }
+    .tag{
+        top: 80px;
+        height: 140px;
+    }
+    .container{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:360px){
+    .tag{
+        background-image: none;
+        top: 40px;
+        right: 0;
+        width: auto;
+    }
+    .navbar-inverse .navbar-nav{
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        margin: 0;
+    }
+    .nav-tabs li.active:after{
+        left: 30%;
+    }
+    .tag p{
+        color: red;
+        font-weight: bold;
     }
 }
